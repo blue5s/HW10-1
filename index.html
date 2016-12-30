@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+<style id="jsbin-css">
+.hint{
+  border: 1px solid #eee;
+  width: 120px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 7px;
+  position:absolute;
+  left: 100%;
+  top:0;
+  display: none;
+}
+.playground{
+  width: 150px;
+  margin: 20vh auto 0;
+  /* border: 1px solid gray; */
+  position:relative;
+}
+</style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="2">一起看看小王子留給我們與人生的六個關係練習</td>
+        </tr>
+        <tr>
+            <td rowspan="2">與自己的關係</td>
+            <td>每個人都有自己的孤單課題</td>
+        </tr>
+        <tr>
+            <td>你不需要變成你不喜歡的大人</td>
+        </tr>
+        <tr>
+            <td rowspan="2">與愛人的關係</td>
+            <td>從心甘情願豢養與被豢養開始</td>
+        </tr>
+        <tr>
+            <td>因為他是你的玫瑰</td>
+        </tr>
+        <tr>
+            <td rowspan="2">與世界的關係</td>
+            <td>用「心」去尋覓你笑著的理由</td>
+        </tr>
+        <tr>
+            <td>分離的時候，學會道別</td>
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function () {
+            $("td").click(function () {
+                $(this).css("background", "lightblue");
+            });
+            $("[rowspan=2]").click(function () {
+                $(this).css("background", "lightgreen");
+            });
+        })
+    </script>>
+    <div class="playground">
+  <input type="text"></input>
+  <div class="hint">This is a tooltip!</div>
+</div>
+
+
+<script id="jsbin-javascript">
+$().ready(function(){
+  $("input").mouseover(function(){
+     $(".hint").css("display","block")});
+   $("input").mouseout(function(){
+     $(".hint").css("display","none")});                   
+
+});
+</script>
+<br>
+
+</body>
+
+</html>
